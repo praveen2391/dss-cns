@@ -19,9 +19,10 @@ resource "azurerm_key_vault" "azkeyvault" {
 #   object_id    = var.object_id
     
 
-#     key_permissions = [ "Get", ]
+#   key_permissions = [ "Get", ]
     
-#     secret_permissions = [ "Get", ]
+#   secret_permissions = [ "Get", ]
 
-#     storage_permissions = [ "Get", ]
-#   }
+#   storage_permissions = [ "Get", ]
+
+# }
