@@ -13,8 +13,7 @@ resource "azurerm_key_vault" "azkeyvault" {
 
 }  
 
-resource "azurerm_key_vault_access_policy" "azkeyvault" {
-  key_vault_id = azurerm_key_vault.azkeyvault.id
+access_policy {
   tenant_id    = var.tenant_id
   object_id    = var.object_id
     
