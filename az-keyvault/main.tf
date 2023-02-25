@@ -13,16 +13,16 @@ resource "azurerm_key_vault" "azkeyvault" {
 
 }  
 
-# resource "azurerm_key_vault_access_policy" "azkeyvault" {
-#   key_vault_id = azurerm_key_vault.azkeyvault.id
-#   tenant_id    = var.tenant_id
-#   object_id    = var.object_id
+resource "azurerm_key_vault_access_policy" "azkeyvault" {
+  key_vault_id = azurerm_key_vault.azkeyvault.id
+  tenant_id    = var.tenant_id
+  object_id    = var.object_id
     
 
-#   key_permissions = [ "Get", ]
+  key_permissions = [ "Get", ]
     
-#   secret_permissions = [ "Get", ]
+  secret_permissions = [ "Get", ]
 
-#   storage_permissions = [ "Get", ]
+  storage_permissions = [ "Get", ]
 
-# }
+}
