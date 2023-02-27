@@ -12,5 +12,5 @@ variable "key-type" {
 
 variable "key-size" {
   type = number
-  defatlt = 2048
+  default = 2048
 }
