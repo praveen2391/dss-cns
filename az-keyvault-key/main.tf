@@ -1,4 +1,4 @@
-resource "azurerm_key_vault_key" "generated" {
+resource "azurerm_key_vault_key" "keyvault-key" {
   name         = var.keyvault-key-name
   key_vault_id = var.keyvault-id
   key_type     = var.key-type
