@@ -14,8 +14,8 @@ resource "azurerm_key_vault" "azkeyvault" {
 }  
 
 access_policy {
-  tenant_id    = data.azurerm_client_config.current.tenant_id
-  object_id    = data.azurerm_client_config.current.object_id
+  tenant_id    = var.tenant-id
+  object_id    = var.object-id
     
 
   key_permissions = [ "Get", ]
