@@ -6,6 +6,6 @@ variable "object-id" {
   
 }
 
-variable "key_vault_id" {
+variable "key-vault-id" {
   
 }
