@@ -13,17 +13,17 @@ resource "azurerm_key_vault" "azkeyvault" {
 
 }  
 
-access_policy {
-  tenant_id    = var.tenant-id
-  object_id    = var.object-id
+# access_policy {
+#   tenant_id    = var.tenant-id
+#   object_id    = var.object-id
     
 
-  key_permissions = [ "Get", ]
+#   key_permissions = [ "Get", ]
     
-  secret_permissions = [ "Get", ]
+#   secret_permissions = [ "Get", ]
 
-  storage_permissions = [ "Get", ]
+#   storage_permissions = [ "Get", ]
 
-}
+# }
 
 
