@@ -6,7 +6,7 @@ resource "azurerm_key_vault_access_policy" "azkeyvaultap" {
   object_id    = var.object-id
     
 
-  key_permissions = [ "Get", "Create", "Delete", "Update", "Import", ]
+  key_permissions = [ "backup", "create", "decrypt", "delete", "encrypt", "get", "import", "list", "purge", "recover", "restore", "sign", "unwrapKey","update", "verify", "wrapKey", ]
     
   secret_permissions = [ "Get", "Set", "Delete", "List", ]
 
